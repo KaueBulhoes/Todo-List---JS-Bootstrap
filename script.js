@@ -1,8 +1,4 @@
-let toDoList = [
-    { task: "Teste", priority: "Alta" },
-    { task: "Comprar pão", priority: "Média" },
-    { task: "Jogar jogos", priority: "Baixa" }
-];
+let toDoList = [];
 
 const taskContainer = document.querySelector("#lista");
 
@@ -16,7 +12,11 @@ function renderList() {
         taskCell.textContent = entry.task;
 
         const priorityCell = document.createElement("td");
-        priorityCell.textContent = entry.priority;
+        const tagPriority = document.createElement("div");
+        tagPriority.textContent = entry.priority;
+        tagPriority.classList.add(`priority-${entry.priority}`)
+
+        priorityCell.appendChild(tagPriority);
 
         const actionCell = document.createElement("td");
         const completeButton = document.createElement("button");

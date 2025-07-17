@@ -20,3 +20,22 @@ th {
 th:last-child {
     width: 10%;
 }
+
+.priority-Alta, .priority-Média, .priority-Baixa {
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.priority-Alta {
+    background-color: #ff0015 !important;
+}
+
+.priority-Média {
+    background-color: #ffc400 !important;
+}
+
+.priority-Baixa {
+    background-color: #009c56 !important;
+}
