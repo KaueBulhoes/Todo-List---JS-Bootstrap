@@ -1,17 +1,15 @@
-let toDoList = [
-    {
-        task: "Comprar pão",
-        priority: "Alta"
-    },
-    {
-        task: "Ir para academia",
-        priority: "Média"
-    },
-];
-
 const taskContainer = document.querySelector("#lista");
 
+function getToDoList() {
+    return JSON.parse(localStorage.getItem("Todo List")) || [];
+}
+
+function postToDoList(list) {
+    localStorage.setItem("Todo List", JSON.stringify(list));
+}
+
 function renderList() {
+    const toDoList = getToDoList();
     taskContainer.innerHTML = "";
 
     toDoList.forEach((entry, index) => {
@@ -34,7 +32,9 @@ function renderList() {
         completeButton.className = "btn btn-success btn-sm w-100";
 
         completeButton.addEventListener("click", () => {
-            toDoList.splice(index, 1);
+            const updatedList = getToDoList();
+            updatedList.splice(index, 1);
+            postToDoList(updatedList);
             renderList();
         });
 
@@ -50,13 +50,18 @@ document.getElementById('add-task-button').addEventListener("click", () => {
 
     if (!taskName || taskPriority === "") return;
 
+    const toDoList  = getToDoList();
     toDoList.push({ task: taskName, priority: taskPriority });
+
+    postToDoList(toDoList);
+
     document.getElementById('task-name').value = "";
     document.getElementById('task-priority').value = "";
+
     renderList();
 });
 
 document.getElementById('conclude-all').addEventListener("click", () => {
-    toDoList.length = 0;;
+    postToDoList([]);
     renderList();
 })
