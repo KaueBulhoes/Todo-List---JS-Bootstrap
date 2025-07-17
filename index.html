@@ -17,23 +17,27 @@
             <input type="text" id="task-name" placeholder="Nova tarefa" class="form-control rounded">
             <select name="priority" id="task-priority" class="form-select rounded">
                 <option selected value="">Selecione a prioridade</option>
-                <option value="high">Alta</option>
-                <option value="medium">Média</option>
-                <option value="low">Baixa</option>
+                <option value="Alta">Alta</option>
+                <option value="Média">Média</option>
+                <option value="Baixa">Baixa</option>
             </select>
-            <button class="btn btn-primary rounded" id="add-task-button">Adicionar</button>
+            <button class="btn btn-primary btn-sm rounded" id="add-task-button">Adicionar</button>
         </div>
-        <div class="d-flex align-items-center flex-column border border-bottom-0">
-            <div class="container text-center">
-                <ul class="row mb-0 ps-0">
-                    <li class="col border-end border-bottom p-1">Tarefa</li>
-                    <li class="col border-end border-bottom">Prioridade</li>
-                    <li class="col border-bottom"></li>
-                </ul>
-            </div>
-            <div class="container text-center" id="lista"></div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered text-center align-middle">
+                <thead class="table">
+                    <tr>
+                        <th>Tarefa</th>
+                        <th>Prioridade</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="lista"></tbody>
+            </table>
         </div>
     </div>
+
     <script src="script.js"></script>
     <script>renderList()</script>
 </body>
