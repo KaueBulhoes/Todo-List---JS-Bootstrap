@@ -13,16 +13,23 @@
 <body class="container">
     <div>
         <h1 class="fs-4 my-4">Lista de Tarefas</h1>
-        <div class="input-group input-group-sm mb-4 w-50 gap-4">
-            <input type="text" id="task-name" placeholder="Nova tarefa" class="form-control rounded">
-            <select name="priority" id="task-priority" class="form-select rounded">
-                <option selected value="">Prioridade</option>
-                <option value="Alta">Alta</option>
-                <option value="Média">Média</option>
-                <option value="Baixa">Baixa</option>
-            </select>
-            <button class="btn btn-primary btn-sm rounded" id="add-task-button">Adicionar</button>
+        <div class="row g-2 mb-4 justify-content-md-start">
+            <div class="col-12 col-md-4">
+                <input type="text" id="task-name" placeholder="Nova tarefa" class="form-control rounded">
+            </div>
+            <div class="col-12 col-md-2">
+                <select name="priority" id="task-priority" class="form-select rounded">
+                    <option selected value="">Prioridade</option>
+                    <option value="Alta">Alta</option>
+                    <option value="Média">Média</option>
+                    <option value="Baixa">Baixa</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-1">
+                <button class="btn btn-primary btn-sm rounded w-100 h-100" id="add-task-button">Adicionar</button>
+            </div>
         </div>
+
 
         <div class="table-responsive">
             <table class="table table-bordered text-start align-middle">
