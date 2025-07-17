@@ -7,3 +7,16 @@
 body {
     box-sizing: border-box;
 }
+
+.table-light {
+    background-color: transparent !important;
+}
+
+th {
+    width: 45%;
+    background-color: transparent !important;
+}
+
+th:last-child {
+    width: 10%;
+}

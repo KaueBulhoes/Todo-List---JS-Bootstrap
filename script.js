@@ -21,7 +21,7 @@ function renderList() {
         const actionCell = document.createElement("td");
         const completeButton = document.createElement("button");
         completeButton.textContent = "Concluir";
-        completeButton.className = "btn btn-success btn-sm";
+        completeButton.className = "btn btn-success btn-sm w-100";
 
         completeButton.addEventListener("click", () => {
             toDoList.splice(index, 1);
@@ -45,3 +45,7 @@ document.getElementById('add-task-button').addEventListener("click", () => {
     document.getElementById('task-priority').value = "";
     renderList();
 });
+
+document.getElementById('conclude-all').addEventListener("click", () => {
+    taskContainer.innerHTML = "";
+})
