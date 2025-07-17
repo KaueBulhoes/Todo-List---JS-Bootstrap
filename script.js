@@ -21,6 +21,7 @@ function renderList() {
         const actionCell = document.createElement("td");
         const completeButton = document.createElement("button");
         completeButton.textContent = "Concluir";
+        completeButton.title = "Concluir tarefa."
         completeButton.className = "btn btn-success btn-sm w-100";
 
         completeButton.addEventListener("click", () => {
