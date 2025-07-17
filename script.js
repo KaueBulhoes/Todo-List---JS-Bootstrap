@@ -1,4 +1,13 @@
-let toDoList = [];
+let toDoList = [
+    {
+        task: "Comprar pão",
+        priority: "Alta"
+    },
+    {
+        task: "Ir para academia",
+        priority: "Média"
+    },
+];
 
 const taskContainer = document.querySelector("#lista");
 
