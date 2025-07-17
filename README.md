@@ -29,11 +29,12 @@ Este é um projeto de **Lista de Tarefas** (ToDo List) desenvolvido durante o bo
 ---
 
 ## 📁 Estrutura de Arquivos
-📦todo-list-soulcode
+📦```todo-list-soulcode/
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
+```
 
 ---
 
