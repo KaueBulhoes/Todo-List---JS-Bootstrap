@@ -28,16 +28,6 @@ Este é um projeto de **Lista de Tarefas** (ToDo List) desenvolvido durante o bo
 
 ---
 
-## 📁 Estrutura de Arquivos
-📦```todo-list-soulcode/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
----
-
 ## 🎓 Bootcamp
 
 Projeto desenvolvido como parte das atividades práticas do **Bootcamp Full Stack Web Developer - React + Node.js** promovido pela **SoulCode Academy**.  
