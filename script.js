@@ -47,5 +47,6 @@ document.getElementById('add-task-button').addEventListener("click", () => {
 });
 
 document.getElementById('conclude-all').addEventListener("click", () => {
-    taskContainer.innerHTML = "";
+    toDoList.length = 0;;
+    renderList();
 })
