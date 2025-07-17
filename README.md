@@ -44,15 +44,9 @@ A proposta foi aplicar os conceitos de JavaScript Vanilla, manipulação de arra
 
 ---
 
-## 📷 Preview
-
-![preview](./preview-image.png) <!-- Substitua com uma imagem real do projeto, se quiser -->
-
----
-
 ## 📌 Autor
 
-Desenvolvido por **[Seu Nome Aqui]**  
+Desenvolvido por **[Kauê Bulhões]**  
 Bootcamp SoulCode Academy • 2025
 
 ---
